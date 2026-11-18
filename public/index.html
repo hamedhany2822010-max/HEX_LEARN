@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071329">
+  <title>HEX LEARN | الثقافة المالية</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="HEX LEARN"><span class="brand-mark">H</span><span>HEX <b>LEARN</b></span></a>
+    <span class="school-tag">منصة الثقافة المالية</span>
+    <button class="top-login" id="headerLogin">دخول الطلاب</button>
+  </header>
+
+  <main>
+    <section class="hero" id="welcome">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> تعلّم اليوم… وابنِ مستقبلك</div>
+        <h1>مرحباً بكم في<br><span>HEX LEARN</span></h1>
+        <p class="hero-lead">رحلتك لفهم المال، وتنظيم مصروفك، واتخاذ قرارات مالية أذكى تبدأ من هنا.</p>
+        <div class="hero-actions">
+          <button class="btn btn-primary" id="startBtn">ابدأ رحلتك <span>←</span></button>
+          <a class="btn btn-ghost" href="#about">اكتشف المنصة</a>
+        </div>
+        <div class="credit-line">هذا ويب سايت صنع <b>Programmer Hamed</b><br>وتطوير <b>Programmer Hamed</b></div>
+        <div class="school-line">مرحباً بمدرسة شرويدة الثانوية المشتركة</div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="coin coin-main">H<span>Ξ</span></div>
+        <div class="float-card card-save"><span class="mini-icon">↗</span><div><small>هدفك القادم</small><b>الادخار الذكي</b></div></div>
+        <div class="float-card card-chart"><span class="bars"><i></i><i></i><i></i><i></i><i></i></span><div><small>خطوة بخطوة</small><b>مستقبل أقوى</b></div></div>
+        <div class="spark spark-one">✦</div><div class="spark spark-two">✧</div>
+      </div>
+    </section>
+
+    <section class="features" id="about">
+      <div class="section-heading"><span class="eyebrow">تعلّم بطريقة مختلفة</span><h2>مهارات مالية <span>لحياتك</span></h2><p>محتوى مبسّط يساعدك تفهم أساسيات التعامل مع المال.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon">◈</div><h3>الادخار</h3><p>حوّل أهدافك إلى خطة وابدأ بمبالغ صغيرة.</p></article>
+        <article class="feature-card"><div class="feature-icon">▤</div><h3>إدارة الميزانية</h3><p>نظّم مصروفك ووازن بين احتياجاتك ورغباتك.</p></article>
+        <article class="feature-card"><div class="feature-icon">↗</div><h3>أساسيات الاستثمار</h3><p>افهم العائد والمخاطر قبل اتخاذ أي قرار.</p></article>
+        <article class="feature-card"><div class="feature-icon">⬡</div><h3>الأمان المالي</h3><p>تعرّف على طرق حماية بياناتك وأموالك.</p></article>
+      </div>
+    </section>
+
+    <section class="assistant-section" id="assistant">
+      <div class="assistant-intro"><span class="eyebrow">مساعدك المالي الذكي</span><h2>اسأل… <span>وافهم أكثر</span></h2><p>اكتب سؤالك في الثقافة المالية. المنصة تحفظ الإجابات المفيدة لتستفيد منها بقية طلاب المدرسة وتقلل استدعاءات الذكاء الاصطناعي.</p></div>
+      <div class="chat-card">
+        <div class="chat-head"><div class="bot-avatar">H</div><div><b>HEX Assistant</b><small><span class="online-dot"></span> مساعد الثقافة المالية</small></div><span class="secure-label">تعلم آمن</span></div>
+        <div class="chat-body" id="chatBody"><div class="message bot-message">أهلاً بك! 👋 أنا مساعد HEX LEARN. اسألني عن الادخار أو الميزانية أو البنوك أو أساسيات الاستثمار.</div></div>
+        <form id="askForm" class="ask-form"><input id="questionInput" maxlength="700" placeholder="اكتب سؤالك هنا…" autocomplete="off"><button type="submit" id="askBtn" aria-label="إرسال السؤال">➤</button></form>
+        <div class="image-tools">
+          <input type="file" id="questionImage" accept="image/jpeg,image/png,image/webp" hidden>
+          <button type="button" id="chooseImageBtn" class="image-upload-btn">📷 ارفع صورة السؤال</button>
+          <span id="imageFileName" class="image-file-name">لم يتم اختيار صورة</span>
+          <div id="imagePreviewWrap" class="image-preview-wrap" hidden>
+            <img id="imagePreview" alt="معاينة صورة السؤال">
+            <button type="button" id="removeImageBtn">إزالة الصورة ✕</button>
+          </div>
+          <button type="button" id="solveImageBtn" class="solve-image-btn" disabled>✨ حل السؤال بالذكاء الاصطناعي</button>
+          <div id="imageStatus" class="image-status" role="status"></div>
+        </div>
+        <div class="chat-foot">لا تشارك أي كلمات مرور أو بيانات بنكية أو معلومات شخصية.</div>
+      </div>
+    </section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#"><span class="brand-mark">H</span><span>HEX <b>LEARN</b></span></a><span>منصة الثقافة المالية · مدرسة شرويدة الثانوية المشتركة</span><span>© HEX LEARN</span></footer>
+
+  <div class="modal-backdrop" id="loginModal" aria-hidden="true">
+    <div class="login-modal">
+      <button class="close-modal" id="closeModal" aria-label="إغلاق">×</button>
+      <div class="modal-logo">H</div><h2>أهلاً بك في HEX LEARN</h2><p>اكتب كود الدخول الموحد الخاص بالمدرسة للبدء.</p>
+      <form id="loginForm"><input id="accessCode" type="password" placeholder="كود دخول المدرسة" required autocomplete="current-password"><button class="btn btn-primary" type="submit">تسجيل الدخول</button></form>
+      <div class="form-error" id="loginError"></div>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="/app.js"></script>
+</body>
+</html>
